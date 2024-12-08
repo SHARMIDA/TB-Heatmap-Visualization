@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TB Heatmap Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TB Heatmap Visualization</h1>
+        <p>Analyze chest X-rays for TB detection with a heatmap overlay.</p>
+    </header>
+    <main>
+        <section class="upload-section">
+            <h2>Upload an X-ray Image</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <p class="upload-instructions">Supported formats: JPG, PNG. Max size: 5MB.</p>
+        </section>
+        <section class="output-section">
+            <div class="canvas-container">
+                <h3>Original X-ray Image</h3>
+                <canvas id="originalCanvas" width="256" height="256"></canvas>
+            </div>
+            <div class="canvas-container">
+                <h3>TB Heatmap Overlay</h3>
+                <canvas id="heatmapCanvas" width="256" height="256"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Designed by <span class="author">SHARMIDA LAKSHMI</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
